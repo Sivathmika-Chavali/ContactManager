@@ -4,7 +4,7 @@ const ejs = require("ejs")
 const path = require("path")
 const dotenv = require("dotenv").config();
 const app = express();
-const connectDb = require("../SMR/config/dbConnection");
+const connectDb = require("./config/dbConnection");
 const port = process.env.PORT;
 connectDb();
 app.use(express.json());
